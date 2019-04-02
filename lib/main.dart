@@ -8,9 +8,12 @@ class MyApp extends StatelessWidget {
   // #docregion build
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return new MaterialApp(
       title: 'Startup Name Generator',
-      home: RandomWords(),
+      theme: new  ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: new RandomWords(),
     );
   }
   // #enddocregion build
